@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Understanding the cost of ownership</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Understanding the cost of ownership">
+  <meta name="author" content="Vincent Phan">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Understanding the cost of ownership</h1>
+    <h2>New or used car</h2>
+    <p>Vincent Phan<br/>Data Scientist</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Are you a trust fund baby? Chances are, you&#39;re probably not...</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>We all dream of financial stabilities but are we making the right choice when we decide to pull up to an BMW dealer and buy that M3 that have been long sought after?</li>
+<li>Here&#39;s a web based application that can probably make you think again.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>How much are you actually spending on a new or used car?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>If you&#39;re financing your car, what is your APR?</li>
+<li>How long do you planned to own your car?</li>
+<li>What is the out-the-door cost of your car?</li>
+<li>Is your car a gas gustler? What is the MPG? </li>
+<li>What is the current gas prices?</li>
+<li>How much will your car depreciate?</li>
+</ol>
+
+<p>All of these variables will play an important role in determining your true cost of ownership on your next car.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>What&#39;s going on behind the application?</h2>
+  </hgroup>
+  <article data-timings="">
+    <h4>User input:</h4>
+
+<ol>
+<li>Owned or financed? If Financed, APR input will be prompt. There&#39;s a function within the application that creates an amortization table. It will then sum up the total interests paid based on total principal, APR and length of loan. </li>
+<li>Depreciation is calculated based on 19%, 31%, 42%, 51%, and 60% depreciation over 1, 2, 3, 4, and 5 years, respectively. </li>
+<li>Fuel cost is calculated using gas prices per gallon and average of 13,476 miles per year.</li>
+</ol>
+
+<p>References:</p>
+
+<ul>
+<li>Depreciation<br>
+<a href="http://www.edmunds.com/car-buying/how-fast-does-my-new-car-lose-value-infographic.html">http://www.edmunds.com/car-buying/how-fast-does-my-new-car-lose-value-infographic.html</a><br></li>
+<li>Amortization function by Thomas Girke<br>
+<a href="http://faculty.ucr.edu/%7Etgirke/Documents/R_BioCond/My_R_Scripts/mortgage.R">http://faculty.ucr.edu/~tgirke/Documents/R_BioCond/My_R_Scripts/mortgage.R</a><br></li>
+<li>Average miles<br>
+<a href="https://www.fhwa.dot.gov/ohim/onh00/bar8.htm">https://www.fhwa.dot.gov/ohim/onh00/bar8.htm</a><br></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Give the app a try</h2>
+  </hgroup>
+  <article data-timings="">
+    <h4>$33,744.04!</h4>
+
+<ul>
+<li>This is the dollar amount that will come out of your pocket if you finance a $39,800 car at 3.25 APR for 5 years!</li>
+</ul>
+
+<h4>$36,216.64</h4>
+
+<ul>
+<li>We&#39;re lucky that gas prices are record low right now...</li>
+<li>If gas prices goes up to $3.99/gallon, you spend $2472.60 more!</li>
+</ul>
+
+<h4>What&#39;s my point? Buying a car is NOT an investment....</h4>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <article data-timings="">
+    <pre><code class="r">publish(user = &quot;Zupervinn&quot;, repo=&quot;DataProduct_shiny_presentation&quot;)
+</code></pre>
+
+<pre><code>## Please set mode to selfcontained and run Slidify
+</code></pre>
+
+<pre><code>## This would place library files in the slide folder
+</code></pre>
+
+<pre><code>## making it self-contained
+</code></pre>
+
+<pre><code>## [1] FALSE
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Are you a trust fund baby? Chances are, you&#39;re probably not...'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='How much are you actually spending on a new or used car?'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='What&#39;s going on behind the application?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Give the app a try'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='NA'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
