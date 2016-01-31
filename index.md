@@ -10,7 +10,7 @@ widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 
----
+--- 
 
 ## Are you a trust fund baby? Chances are, you're probably not...
 
@@ -19,6 +19,7 @@ knit        : slidify::knit2slides
 
 ---
 ## How much are you actually spending on a new or used car?
+
 
 1. If you're financing your car, what is your APR?
 2. How long do you planned to own your car?
@@ -59,25 +60,6 @@ https://www.fhwa.dot.gov/ohim/onh00/bar8.htm
 
 #### What's my point? Buying a car is NOT an investment....
 
----
 
 
-```r
-publish(user = "Zupervinn", repo="DataProduct_shiny_presentation")
-```
 
-```
-## Please set mode to selfcontained and run Slidify
-```
-
-```
-## This would place library files in the slide folder
-```
-
-```
-## making it self-contained
-```
-
-```
-## [1] FALSE
-```
